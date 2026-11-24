@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karan Chaudhary · Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Karan, a software developer: projects, skills, resume and contact." />
+    <script>
+      // Apply saved/system theme before paint to avoid a flash
+      (function () {
+        try {
+          var t =
+            localStorage.getItem("theme") ||
+            (matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark");
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="container nav__inner">
+        <a href="#home" class="logo">Karan Chaudhary</a>
+        <nav id="menu" class="nav__links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav__actions">
+          <button
+            id="theme-toggle"
+            class="icon-btn"
+            aria-label="Toggle dark/light theme"
+            title="Toggle theme">
+            <span class="icon-sun" aria-hidden="true">☀</span
+            ><span class="icon-moon" aria-hidden="true">☾</span>
+          </button>
+          <button
+            id="menu-toggle"
+            class="icon-btn menu-btn"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="menu">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="container hero__inner">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Karan Chaudhary<span class="accent">.</span></h1>
+          <p class="hero__role">
+            Full-stack developer building fast, accessible web apps.
+          </p>
+          <p class="hero__text">
+            I turn ideas into reliable products, from clean APIs to polished
+            interfaces. Currently open to internships and junior roles.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about">
+          <div>
+            <h2>About me</h2>
+            <p>
+              Write 2–3 sentences here: who you are, what you study or do, and
+              what kind of problems you enjoy solving. Mention a recent thing
+              you built or learned.
+            </p>
+            <p>
+              Outside code: add a line or two of personality (hobbies,
+              open-source, communities).
+            </p>
+          </div>
+          <ul class="facts">
+            <li><strong>Location</strong><span>City, Country</span></li>
+            <li><strong>Focus</strong><span>Web · APIs · Cloud</span></li>
+            <li><strong>Status</strong><span>Open to work</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--alt">
+        <div class="container">
+          <h2>Tech stack</h2>
+          <div class="grid grid--skills">
+            <article class="card">
+              <h3>Frontend</h3>
+              <ul class="chips">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Backend</h3>
+              <ul class="chips">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Python</li>
+                <li>REST</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Tools</h3>
+              <ul class="chips">
+                <li>Git</li>
+                <li>GitHub Actions</li>
+                <li>Docker</li>
+                <li>Linux</li>
+                <li>Figma</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="grid grid--projects">
+            <article class="card project">
+              <div class="project__thumb" aria-hidden="true">01</div>
+              <h3>Project One</h3>
+              <p>
+                One sentence on what it does and the problem it solves. Mention
+                a measurable result if you have one.
+              </p>
+              <ul class="chips">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <div class="project__links">
+                <a
+                  href="https://github.com/your-username/project-one"
+                  target="_blank"
+                  rel="noopener"
+                  >Code</a
+                >
+                <a href="https://example.com" target="_blank" rel="noopener"
+                  >Live demo</a
+                >
+              </div>
+            </article>
+            <article class="card project">
+              <div class="project__thumb" aria-hidden="true">02</div>
+              <h3>Project Two</h3>
+              <p>
+                Describe the project, your role, and the most interesting
+                technical challenge you handled.
+              </p>
+              <ul class="chips">
+                <li>TypeScript</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+              </ul>
+              <div class="project__links">
+                <a
+                  href="https://github.com/your-username/project-two"
+                  target="_blank"
+                  rel="noopener"
+                  >Code</a
+                >
+                <a href="https://example.com" target="_blank" rel="noopener"
+                  >Live demo</a
+                >
+              </div>
+            </article>
+            <article class="card project">
+              <div class="project__thumb" aria-hidden="true">03</div>
+              <h3>Project Three</h3>
+              <p>
+                Another project: a CLI, a data tool, or an open-source
+                contribution works well here.
+              </p>
+              <ul class="chips">
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>CI/CD</li>
+              </ul>
+              <div class="project__links">
+                <a
+                  href="https://github.com/your-username/project-three"
+                  target="_blank"
+                  rel="noopener"
+                  >Code</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section section--alt">
+        <div class="container">
+          <h2>Resume</h2>
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__date">2024 – Present</span>
+              <h3>Your Degree, Your University</h3>
+              <p>Relevant coursework, GPA or honors if strong.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2025</span>
+              <h3>Role / Internship, Company</h3>
+              <p>What you built or improved, with an outcome or metric.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2024</span>
+              <h3>Certification or Achievement</h3>
+              <p>Hackathon, certificate, open-source contribution, etc.</p>
+            </div>
+          </div>
+          <a class="btn btn--primary" href="resume.pdf" download
+            >Download resume (PDF)</a
+          >
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact">
+          <h2>Let's talk</h2>
+          <p>Have a role, project or question? My inbox is open.</p>
+          <a class="btn btn--primary" href="mailto:you@example.com"
+            >you@example.com</a
+          >
+          <ul class="social">
+            <li>
+              <a
+                href="https://github.com/your-username"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/your-username"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/your-username"
+                target="_blank"
+                rel="noopener"
+                >X / Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        © <span id="year"></span> Your Name. Built with HTML, CSS and a little
+        JavaScript.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
